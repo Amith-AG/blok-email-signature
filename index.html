@@ -18,13 +18,25 @@
     ></script>
 
     <script>
+      const first_name = "Amith";
+      const last_name = "A G";
+      const role = "Information & Technology Manager";
+      const email = "amitanil@bloksupplychain.com";
+      const phone = "+91 9447081424";
+      const landline = "+91 2247507283";
+      const address =
+        "Solus 1202, Hiranandani Estate, 400607, Thane Maharashtra";
       $(document).ready(function () {
-        $("#first_name").text("Amith");
-        $("#last_name").text("A G");
-        $("#role").text("Information & Technology Manager");
-        $("#phone").text("+91 9447081424");
-        $("#email").text("amitanil@bloksupplychain.com");
-        $("#email_link").attr("href", "mailto:amitanil@bloksupplychain.com");
+        $("#first_name").text(first_name);
+        $("#last_name").text(last_name);
+        $("#role").text(role);
+        $("#phone").text(phone);
+        $("#phone_anchor").attr("href", `tel:${phone}`);
+        $("#landline").text(landline);
+        $("#landline_anchor").attr("href", `tel:${landline}`);
+        $("#email").text(email);
+        $("#address").text(address);
+        $("#email_link").attr("href", `mailto:${email}`);
       });
     </script>
   </head>
@@ -240,7 +252,7 @@
                           </td>
                           <td style="padding: 0px; color: rgb(0, 0, 0)">
                             <a
-                              href="tel:+91 22 47507283"
+                              id="landline_anchor"
                               color="#000000"
                               class="contact-infoExternalLink-sc-mmkjr6-2 gQPsTs"
                               style="
@@ -248,10 +260,11 @@
                                 color: rgb(0, 0, 0);
                                 font-size: 12px;
                               "
-                              ><span>+91 2247507283</span></a
-                            >
+                              ><span id="landline"></span
+                            ></a>
                             |
                             <a
+                              id="phone_anchor"
                               href="tel:+91 93216 96216"
                               color="#000000"
                               class="contact-infoExternalLink-sc-mmkjr6-2 gQPsTs"
@@ -260,8 +273,8 @@
                                 color: rgb(0, 0, 0);
                                 font-size: 12px;
                               "
-                              ><span id="phone">+91 9321696216</span></a
-                            >
+                              ><span id="phone"></span
+                            ></a>
                           </td>
                         </tr>
                         <tr height="25" style="vertical-align: middle">
@@ -418,6 +431,7 @@
                           </td>
                           <td style="padding: 0px">
                             <span
+                              id="address"
                               color="#000000"
                               class="contact-infoAddress-sc-mmkjr6-3 lobCWC"
                               style="font-size: 12px; color: rgb(0, 0, 0)"

@@ -18,13 +18,27 @@
     ></script>
 
     <script>
+      const first_name = "Arman";
+      const last_name = "Shaikh";
+      const role = "Sales & Commercial";
+      const email = "Arman.Shaikh@bloksupplychain.com";
+      const phone = "+91 93268 51432";
+      const landline = "+91 2247507283";
+      const address =
+        "Solus 1202, Hiranandani Estate, 400607, Thane Maharashtra";
       $(document).ready(function () {
         $("#first_name").text("Arman");
         $("#last_name").text("Shaikh");
         $("#role").text("Finance Executive");
-        $("#phone").text("+919326851432");
+        $("#phone").text(phone);
+        $("#phone_anchor").attr("href", "tel:" + phone);
+        $("#landline").text(landline);
+        $("#landline_anchor").attr("href", "tel:" + landline);
         $("#email").text("Arman.Shaikh@bloksupplychain.com");
-        $("#email_link").attr("href", "mailto:Arman.Shaikh@bloksupplychain.com");
+        $("#email_link").attr(
+          "href",
+          "mailto:Arman.Shaikh@bloksupplychain.com"
+        );
       });
     </script>
   </head>
@@ -240,7 +254,7 @@
                           </td>
                           <td style="padding: 0px; color: rgb(0, 0, 0)">
                             <a
-                              href="tel:+91 22 47507283"
+                              id="landline_anchor"
                               color="#000000"
                               class="contact-infoExternalLink-sc-mmkjr6-2 gQPsTs"
                               style="
@@ -248,12 +262,12 @@
                                 color: rgb(0, 0, 0);
                                 font-size: 12px;
                               "
-                              ><span>+91 2247507283</span></a
+                              ><span id="landline">/span></a
                             >
-                            <!-- | -->
+                            |
                             <!-- phon number tag -->
                             <a
-                              href="tel:+91 93216 96216"
+                                id="phone_anchor"
                               color="#000000"
                               class="contact-infoExternalLink-sc-mmkjr6-2 gQPsTs"
                               style="

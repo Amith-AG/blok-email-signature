@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -18,16 +18,22 @@
     ></script>
 
     <script>
-      const first_name = "Abhiraj";
-      const last_name = "Puthanpurakil";
-      const role = "Sales & Commercial";
-      const email = "AbhiRaj@bloksupplychain.com";
+      const first_name = "Support";
+      const last_name = "Specialist";
+      const company = "Grequoluxe";
+      const company_motto = "Where Art Meets Function";
+      const company_des = "Furniture Global Exports";
+      const role = "Retail & E-Commerce";
+      const email = "support@greqoluxe.com";
       const landline = "+91 2247507283";
-      const address ="Solus 1202, Hiranandani Estate, 400607, Thane Maharashtra";
+      const address = `Flat 3DE, Shridi Tower - Phase 1 Sowparnika Apartments,Opposite to St. Thomas School Gate # 5, Mukkolakkal, P.O, Thiruvananthapuram, Kerala 695043`;
       $(document).ready(function () {
         $("#first_name").text(first_name);
         $("#last_name").text(last_name);
         $("#role").text(role);
+        $("#company").text(company);
+        $("#company_des").text(company_des);
+        $("#company_motto").text(company_motto);
         $("#email").text(email);
         $("#email_link").attr("href", `mailto:${email}`);
         $("#landline").text(landline);
@@ -87,7 +93,7 @@
                             style="text-align: center"
                           >
                             <img
-                              src="public/logo.png"
+                              src="public/greqo.png"
                               role="presentation"
                               width="130"
                               class="imageStyledImage-sc-hupvqm-0 kUXePh"
@@ -138,9 +144,11 @@
                         line-height: 22px;
                       "
                     >
-                      <span>Exports US &amp; Europe</span
+                      <span id="company_des">Exports US &amp; Europe</span
                       ><span>&nbsp;|&nbsp;</span
-                      ><span>Bloksupplychain Secure Log India Private Ltd</span>
+                      ><span id="company"
+                        >Bloksupplychain Secure Log India Private Ltd</span
+                      >
                     </p>
                     <p
                       color="#000000"
@@ -153,7 +161,9 @@
                         line-height: 22px;
                       "
                     >
-                      <span>Delivering Beyond Boundaries</span>
+                      <span id="company_motto"
+                        >Delivering Beyond Boundaries</span
+                      >
                     </p>
                     <table
                       cellpadding="0"

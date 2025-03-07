@@ -18,14 +18,19 @@
     ></script>
 
     <script>
+      const first_name = "Dhanush";
+      const last_name = "Kondoth";
+      const role = "Regional Director / Country Head US";
+      const email = "Dhanush@bloksupplychain.com";
+      const phone = "+1 (970) 581-6982";
       $(document).ready(function () {
-        $("#first_name").text("Dhanush");
-        $("#last_name").text("Kondoth");
-        $("#role").text("Regional Director / Country Head US");
-        $("#phone").text("+1 (970) 581-6982");
-        $("#email").text("Dhanush@bloksupplychain.com");
-        $("#email_link").attr("href", "mailto:Dhanush@bloksupplychain.com");
-        $("#phone_anchor").attr("href", "tel:+1 (970581-6982");
+        $("#first_name").text(first_name);
+        $("#last_name").text(last_name);
+        $("#role").text(role);
+        $("#phone").text(phone);
+        $("#phone_anchor").attr("href", `tel:${phone}`);
+        $("#email").text(email);
+        $("#email_link").attr("href", `mailto:${email}`);
       });
     </script>
   </head>
