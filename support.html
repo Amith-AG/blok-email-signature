@@ -22,16 +22,20 @@
       const last_name = "Specialist";
       const company = "Grequoluxe";
       const company_motto = "Where Art Meets Function";
+      const company_website = "www.greqoluxe.com";
+      const company_website_link = "www.greqoluxe.com";
       const company_des = "Furniture Global Exports";
       const role = "Retail & E-Commerce";
       const email = "support@greqoluxe.com";
-      const landline = "+91 2247507283";
-      const address = `Flat 3DE, Shridi Tower - Phase 1 Sowparnika Apartments,Opposite to St. Thomas School Gate # 5, Mukkolakkal, P.O, Thiruvananthapuram, Kerala 695043`;
+      const landline = "+91 9744221993";
+      const address = `Flat 3DE, Shridi Tower Phase 1 Sowparnika Apartments, Mukkolakkal, P.O, Thiruvananthapuram, Kerala 695043`;
       $(document).ready(function () {
         $("#first_name").text(first_name);
         $("#last_name").text(last_name);
         $("#role").text(role);
         $("#company").text(company);
+        $("#company_website").text(company_website);
+        $("#company_website_link").attr("href", company_website_link);
         $("#company_des").text(company_des);
         $("#company_motto").text(company_motto);
         $("#email").text(email);
@@ -380,6 +384,7 @@
                           </td>
                           <td style="padding: 0px">
                             <a
+                              id="company_website_link"
                               href="//www.bloksupplychain.com"
                               color="#000000"
                               class="contact-infoExternalLink-sc-mmkjr6-2 gQPsTs"
@@ -388,7 +393,9 @@
                                 color: rgb(0, 0, 0);
                                 font-size: 12px;
                               "
-                              ><span>www.bloksupplychain.com</span></a
+                              ><span id="company_website"
+                                >www.bloksupplychain.com</span
+                              ></a
                             >
                           </td>
                         </tr>
